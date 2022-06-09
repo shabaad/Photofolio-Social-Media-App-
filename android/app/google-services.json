@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "222776940593",
+    "project_id": "photofolio-42761",
+    "storage_bucket": "photofolio-42761.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:222776940593:android:b6f6948ab9a32318de9d10",
+        "android_client_info": {
+          "package_name": "com.example.social_media_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "222776940593-pidu3tv134vse3p16nkb279um7aflmtg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcO5r_GRyn5FUCNT6i0t-URPl5W3Qvv9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "222776940593-pidu3tv134vse3p16nkb279um7aflmtg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
