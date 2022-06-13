@@ -1,26 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:social_media_app/responsive/dimensions.dart';
+import 'package:provider/provider.dart';
+import 'package:social_media_app/providers/user_provider.dart';
+import 'package:social_media_app/utils/global_variable.dart';
 
-class ResponsiveLayout extends StatelessWidget {
-  final Widget webScreenLayout;
+class ResponsiveLayout extends StatefulWidget {
   final Widget mobileScreenLayout;
-  const ResponsiveLayout(
-      {Key? key,
-      required this.webScreenLayout,
-      required this.mobileScreenLayout})
-      : super(key: key);
+  final Widget webScreenLayout;
+  const ResponsiveLayout({
+    Key? key,
+    required this.mobileScreenLayout,
+    required this.webScreenLayout,
+  }) : super(key: key);
+
+  @override
+  State<ResponsiveLayout> createState() => _ResponsiveLayoutState();
+}
+
+class _ResponsiveLayoutState extends State<ResponsiveLayout> {
+  @override
+  void initState() {
+    super.initState();
+    addData();
+  }
+
+  addData() async {
+    UserProvider _userProvider =
+        Provider.of<UserProvider>(context, listen: false);
+    await _userProvider.refreshUser();
+  }
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, constraints) {
-        if (constraints.maxWidth > webScreenSize) {
-          return webScreenLayout;
-          //web screen
-        }
-        return mobileScreenLayout;
-        //mobile screen
-      },
-    );
+    return LayoutBuilder(builder: (context, constraints) {
+      if (constraints.maxWidth > webScreenSize) {
+        // 600 can be changed to 900 if you want to display tablet screen with mobile screen layout
+        return widget.webScreenLayout;
+      }
+      return widget.mobileScreenLayout;
+    });
   }
 }
