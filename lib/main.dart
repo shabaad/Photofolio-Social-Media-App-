@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Flutter Demo',
+        title: 'Photofolio',
         theme: ThemeData.dark()
             .copyWith(scaffoldBackgroundColor: mobileBackgroundColor),
         home: StreamBuilder(
