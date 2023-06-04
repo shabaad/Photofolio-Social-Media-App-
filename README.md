@@ -7,7 +7,12 @@ https://shabad963.github.io/
 
 
 
+Instagram UI
+Responsive Web UI
 Backend : Firebase
+Firebase Auth
+Cloud Firestore
+Firebase Storage
 
 Screens :
 login screen,
