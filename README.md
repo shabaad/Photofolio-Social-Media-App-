@@ -7,6 +7,8 @@ https://shabad963.github.io/
 
 
 
+Backend : Firebase
+
 Screens :
 login screen,
 signup screen,
@@ -15,7 +17,7 @@ Search screen,
 Notification screen,
 profile screen
 
-features : 
+Features : 
 
 login and signup,
 upload photos,
