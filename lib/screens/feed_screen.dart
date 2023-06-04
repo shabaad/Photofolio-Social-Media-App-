@@ -19,9 +19,11 @@ class _FeedScreenState extends State<FeedScreen> {
     return Scaffold(
       backgroundColor:
           width > webScreenSize ? webBackgroundColor : mobileBackgroundColor,
-      appBar: width > webScreenSize
+      appBar: 
+      width > webScreenSize
           ? null
-          : AppBar(
+          :
+           AppBar(
               backgroundColor: mobileBackgroundColor,
               centerTitle: false,
               title: Text(
@@ -29,13 +31,13 @@ class _FeedScreenState extends State<FeedScreen> {
                 style: TextStyle(fontSize: 20, height: 32),
               ),
               actions: [
-                IconButton(
-                  icon: const Icon(
-                    Icons.messenger_outline,
-                    color: primaryColor,
-                  ),
-                  onPressed: () {},
-                ),
+                // IconButton(
+                //   icon: const Icon(
+                //     Icons.messenger_outline,
+                //     color: primaryColor,
+                //   ),
+                //   onPressed: () {},
+                // ),
               ],
             ),
       body: StreamBuilder(
@@ -48,7 +50,7 @@ class _FeedScreenState extends State<FeedScreen> {
             );
           }
           return ListView.builder(
-            itemCount: snapshot.data!.docs.length,
+            itemCount: snapshot.data!.docs.length - 1,
             itemBuilder: (ctx, index) => Container(
               margin: EdgeInsets.symmetric(
                 horizontal: width > webScreenSize ? width * 0.3 : 0,

@@ -6,6 +6,7 @@ import 'package:provider/provider.dart';
 import 'package:social_media_app/providers/user_provider.dart';
 import 'package:social_media_app/resources/firestore_methods.dart';
 import 'package:social_media_app/utils/colors.dart';
+import 'package:social_media_app/utils/global_variable.dart';
 import 'package:social_media_app/utils/utils.dart';
 
 class AddPostScreen extends StatefulWidget {
@@ -27,7 +28,7 @@ class _AddPostScreenState extends State<AddPostScreen> {
         return SimpleDialog(
           title: const Text('Create a Post'),
           children: <Widget>[
-            SimpleDialogOption(
+            MediaQuery.of(context).size.width > webScreenSize ? SizedBox() :  SimpleDialogOption(
                 padding: const EdgeInsets.all(20),
                 child: const Text('Take a photo'),
                 onPressed: () async {
