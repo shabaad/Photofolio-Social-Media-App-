@@ -19,7 +19,8 @@ profile screen
 
 Features : 
 
-login and signup,
+login and signup with email and proper validations,
+search users,
 upload photos,
 like,comment photos,
 follow,unfollow users.
