@@ -8,16 +8,16 @@ https://shabad963.github.io/
 
 
 Screens :
-login screen
-signup screen
-Feed screen
-Search screen 
-Notification screen
-profile screens
+login screen,
+signup screen,
+Feed screen,
+Search screen,
+Notification screen,
+profile screen
 
 features : 
 
-login and signup
-upload photos
-like,comment photos
-follow,unfollow users
+login and signup,
+upload photos,
+like,comment photos,
+follow,unfollow users.
