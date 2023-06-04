@@ -38,7 +38,7 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.of(context).pushAndRemoveUntil(
           MaterialPageRoute(
             builder: (context) => const ResponsiveLayout(
-              mobileScreenLayout: MobileScreenLayout(),
+              mobileScreenLayout: WebScreenLayout(),
               webScreenLayout: WebScreenLayout(),
             ),
           ),
