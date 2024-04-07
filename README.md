@@ -2,9 +2,7 @@
 Available for web and mobile.
 
 web link : 
-
-[https://shabad963.github.io/
-](https://shabaad.github.io/photofolio.github.io/)
+https://shabaad.github.io/photofolio.github.io/
 
 
 Instagram UI
